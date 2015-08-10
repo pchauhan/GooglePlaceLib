@@ -14,10 +14,6 @@ This includes following:
  - [Place Autocomplete][7]  (Get place predictions based on the search text)
  - [Query Autocomplete][8](Get on-the-fly geographic query predictions)
 
-
-##How To Use
-
-
 ##Usage
 
 You can take a look at the detailed example usage project .
@@ -30,7 +26,7 @@ You can take a look at the detailed example usage project .
 ```
 YourActivity implements Response_Interface 
 
-//you will get callback 
+//Will get callback 
 onCompeleteRequest(Response_Object mResponseObject)
 
 ```
@@ -41,7 +37,7 @@ requestParams.put(GooglePlace_API_Constant.INPUT, "Your Text");
 requestParams.put(GooglePlace_API_Constant.KEY, "Your API Key");
 requestParams.put(GooglePlace_API_Constant.LOCATION, latitude + "," + longitude);
 
-// User different method as you want   
+// Use different method as per requirement   
 GooglePlace_API.GooglePlace_AutoComplete_API(this, requestParams, this, true);
 GooglePlace_API.GooglePlace_NearBy_API(this, requestParams, this, true);
 GooglePlace_API.GooglePlace_TextSearch_API(this, requestParams, this, true);
@@ -49,7 +45,7 @@ GooglePlace_API.GooglePlace_Details_API(this, requestParams, this, true);
 GooglePlace_API.GooglePlace_RadarSearch_API(this, requestParams, this, true);
 GooglePlace_API.GooglePlace_QueryComplete_API(this, requestParams, this, true);
         
-//Finally you will get compelete json object in onCompeleteRequest method.
+//Finally you will get compelete json object in onCompeleteRequest method. :)
 
 ```        
 
