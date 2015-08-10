@@ -70,21 +70,21 @@ public class GooglePlaceAPI_Activity extends AppCompatActivity implements Respon
         RequestParams requestParams = new RequestParams();
         requestParams.put(GooglePlace_API_Constant.LOCATION, mCurrentLocation.getLatitude() + "," + mCurrentLocation.getLongitude());
         requestParams.put(GooglePlace_API_Constant.RADIUS, "200");
-        requestParams.put(GooglePlace_API_Constant.KEY, "AIzaSyBh_g9yiO9wI5hBTIOjncsHqXkPaK-g3Qs");
+        requestParams.put(GooglePlace_API_Constant.KEY, "Your Key");
         GooglePlace_API.GooglePlace_NearBy_API(this, requestParams, this, true);
     }
 
     public void apiCallForTextSearch() {
         RequestParams requestParams = new RequestParams();
         requestParams.put(GooglePlace_API_Constant.QUERY, "KALOL");
-        requestParams.put(GooglePlace_API_Constant.KEY, "AIzaSyBh_g9yiO9wI5hBTIOjncsHqXkPaK-g3Qs");
+        requestParams.put(GooglePlace_API_Constant.KEY, "Your Key");
         GooglePlace_API.GooglePlace_TextSearch_API(this, requestParams, this, true);
     }
 
     public void apiCallForPlaceDetails() {
         RequestParams requestParams = new RequestParams();
         requestParams.put(GooglePlace_API_Constant.PLACEID, "ChIJN1t_tDeuEmsRUsoyG83frY4");
-        requestParams.put(GooglePlace_API_Constant.KEY, "AIzaSyBh_g9yiO9wI5hBTIOjncsHqXkPaK-g3Qs");
+        requestParams.put(GooglePlace_API_Constant.KEY, "Your Key");
         GooglePlace_API.GooglePlace_Details_API(this, requestParams, this, true);
     }
 
@@ -92,7 +92,7 @@ public class GooglePlaceAPI_Activity extends AppCompatActivity implements Respon
         RequestParams requestParams = new RequestParams();
         requestParams.put(GooglePlace_API_Constant.LOCATION, mCurrentLocation.getLatitude() + "," + mCurrentLocation.getLongitude());
         requestParams.put(GooglePlace_API_Constant.RADIUS, "200");
-        requestParams.put(GooglePlace_API_Constant.KEY, "AIzaSyBh_g9yiO9wI5hBTIOjncsHqXkPaK-g3Qs");
+        requestParams.put(GooglePlace_API_Constant.KEY,"Your Key");
         requestParams.put(GooglePlace_API_Constant.TYPES, GooglePlace_API_Constant.Types.HOSPITAL);
         GooglePlace_API.GooglePlace_RadarSearch_API(this, requestParams, this, true);
     }
@@ -100,14 +100,14 @@ public class GooglePlaceAPI_Activity extends AppCompatActivity implements Respon
     public void apiCallForAutoCompleteSearch() {
         RequestParams requestParams = new RequestParams();
         requestParams.put(GooglePlace_API_Constant.INPUT, "KALOL");
-        requestParams.put(GooglePlace_API_Constant.KEY, "AIzaSyBh_g9yiO9wI5hBTIOjncsHqXkPaK-g3Qs");
+        requestParams.put(GooglePlace_API_Constant.KEY, "Your Key");
         GooglePlace_API.GooglePlace_AutoComplete_API(this, requestParams, this, true);
     }
 
     public void apiCallForQueryAutoCompleteSearch() {
         RequestParams requestParams = new RequestParams();
         requestParams.put(GooglePlace_API_Constant.INPUT, "KALOL");
-        requestParams.put(GooglePlace_API_Constant.KEY, "AIzaSyBh_g9yiO9wI5hBTIOjncsHqXkPaK-g3Qs");
+        requestParams.put(GooglePlace_API_Constant.KEY, "Your Key");
         GooglePlace_API. GooglePlace_QueryComplete_API(this, requestParams, this, true);
     }
 
